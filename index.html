@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link href='https://fonts.googleapis.com/css?family=Indie Flower' 
+          rel='stylesheet' />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -10,10 +12,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <style>
+      *{
+        background-image: url("fondo.png");
+        line-height: 1.75;
+      }
       #resultado {
         font-weight: bold;
         font-size: 6rem;
         text-align: center;
+        font-family: Indie Flower;
+        color: bisque;
       }
     </style>
   </head>
@@ -28,7 +36,7 @@
         <div class="row">
           <div class="col-12 col-md-4 offset-md-4 text-center">
             <video id="video" playsinline autoplay style="width: 1px;"></video>
-            <button class="btn btn-primary mb-2" id="cambiar-camara" onclick="cambiarCamara();">Cambiar camara</button>
+            <button class="btn btn-primary mb-2" id="cambiar-camara" onclick="cambiarCamara();" style="color: #fff; font-family: Indie Flower";>Cambiar cámara</button>
             <canvas id="canvas" width="400" height="400" style="max-width: 100%;"></canvas>
             <canvas id="otrocanvas" width="150" height="150" style="display: none"></canvas>
             <div id="resultado"></div>            
